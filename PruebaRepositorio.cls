@@ -6,4 +6,10 @@ public class PruebaRepositorio{
         List<Contact> cts = [SELECT Id, FirstName, LastName, Email FROM Contact LIMIT 10];
         return cts;
     }
+
+     //Método que devuelve una lista de cuentas
+    public List<Account> getAccounts(){
+        List<Account> accs = [SELECT Id, Name FROM Account LIMIT 10];
+        return accs;
+    }
 }
